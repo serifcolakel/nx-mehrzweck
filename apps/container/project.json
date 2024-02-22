@@ -55,6 +55,7 @@
       "options": {
         "buildTarget": "container:build",
         "hmr": true,
+        "open": true,
         "port": 4200
       },
       "configurations": {
