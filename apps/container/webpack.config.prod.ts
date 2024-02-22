@@ -1,15 +1,15 @@
-import { ModuleFederationConfig, composePlugins, withNx } from '@nx/webpack';
 import { withReact } from '@nx/react';
 import { withModuleFederation } from '@nx/react/module-federation';
+import { composePlugins, ModuleFederationConfig, withNx } from '@nx/webpack';
 
 import baseConfig from './module-federation.config';
 
 const prodConfig: ModuleFederationConfig = {
   ...baseConfig,
   remotes: [
-    ['about', 'http://localhost:4201'],
-    ['blog', 'http://localhost:4202'],
-    ['store', 'http://localhost:4203'],
+    [ 'about', 'http://localhost:4201' ],
+    [ 'blog', 'http://localhost:4202' ],
+    [ 'store', 'http://localhost:4203' ],
   ],
 };
 
@@ -17,5 +17,5 @@ const prodConfig: ModuleFederationConfig = {
 export default composePlugins(
   withNx(),
   withReact(),
-  withModuleFederation(prodConfig)
+  withModuleFederation(prodConfig),
 );

@@ -211,7 +211,7 @@
  */
 
 :where(button, [type="button" i], [type="reset" i], [type="submit" i]) {
-  -webkit-appearance: button;
+  --webkit-appearance: button;
 }
 
 /**
@@ -246,7 +246,7 @@
  */
 
 :where([type="search" i]) {
-  -webkit-appearance: textfield; /* 1 */
+  --webkit-appearance: textfield; /* 1 */
   outline-offset: -2px; /* 2 */
 }
 

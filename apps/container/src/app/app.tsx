@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Link, Route, Routes } from 'react-router-dom';
-import styles from './app.module.css';
+
+import './app.module.css';
 
 const About = React.lazy(() => import('about/Module'));
 const Blog = React.lazy(() => import('blog/Module'));
@@ -9,20 +10,20 @@ const Store = React.lazy(() => import('store/Module'));
 export function App() {
   return (
     <>
-      <nav className={styles['nav']}>
-        <h1 className={styles['title']}>Nx Mehrzweck.</h1>
-        <Link className={styles['link']} to="/">Home</Link>
-        <Link className={styles['link']} to="/about">About</Link>
-        <Link className={styles['link']} to="/blog">Blog</Link>
-        <Link className={styles['link']} to="/store">Store</Link>
+      <nav className="nav">
+        <h1 className="title">Nx Mehrzweck.</h1>
+        <Link className="link" to="/">Home</Link>
+        <Link className="link" to="/about">About</Link>
+        <Link className="link" to="/blog">Blog</Link>
+        <Link className="link" to="/store">Store</Link>
       </nav>
       <React.Suspense fallback={null}>
-        <main className={styles['outlet']}>
+        <main className="outlet">
           <Routes>
-            <Route path="/" element={<h1>Home</h1>} />
-            <Route path="/about" element={<About />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/store" element={<Store />} />
+            <Route element={<h1>Home</h1>} path="/" />
+            <Route element={<About />} path="/about" />
+            <Route element={<Blog />} path="/blog" />
+            <Route element={<Store />} path="/store" />
           </Routes>
         </main>
       </React.Suspense>
