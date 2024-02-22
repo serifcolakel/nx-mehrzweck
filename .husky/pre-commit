@@ -1,0 +1,1 @@
+pnpm exec nx run-many --target=lint --all=true
