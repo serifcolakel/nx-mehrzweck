@@ -1,6 +1,8 @@
+import style from './ui.module.css';
+
 export function Ui() {
   return (
-    <div>
+    <div className={style.container}>
       <h1>Welcome to Ui!</h1>
     </div>
   );

@@ -16,6 +16,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@mehrzweck/data": ["packages/data/src/index.ts"],
       "@mehrzweck/ui": ["packages/ui/src/index.ts"],
       "about/Module": ["apps/about/src/remote-entry.ts"],
       "blog/Module": ["apps/blog/src/remote-entry.ts"],
