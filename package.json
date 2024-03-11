@@ -7,9 +7,10 @@
     "build:prod": "pnpm exec nx run container:build --configuration=production",
     "start:dev": "pnpm exec nx run container:serve --configuration=development",
     "build:dev": "pnpm exec nx run container:build --configuration=development",
-    "dev:store": "pnpm exec nx run store:build --configuration=development && pnpm run start:dev",
-    "dev:about": "pnpm exec nx run about:build --configuration=development && pnpm run start:dev",
-    "dev:blog": "pnpm exec nx run blog:build --configuration=development && pnpm run start:dev",
+    "dev:store": "pnpm exec nx run store:serve --configuration=development && pnpm run start:dev",
+    "dev:about": "pnpm exec nx run about:serve --configuration=development && pnpm run start:dev",
+    "dev:blog": "pnpm exec nx run blog:serve --configuration=development && pnpm run start:dev",
+    "dev:base": "pnpm exec nx run base:serve --configuration=development && pnpm run start:dev",
     "prepare": "husky"
   },
   "private": true,

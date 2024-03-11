@@ -10,6 +10,7 @@ const prodConfig: ModuleFederationConfig = {
     [ 'about', 'http://localhost:4201' ],
     [ 'blog', 'http://localhost:4202' ],
     [ 'store', 'http://localhost:4203' ],
+    [ 'base', 'http://localhost:4204' ],
   ],
 };
 
