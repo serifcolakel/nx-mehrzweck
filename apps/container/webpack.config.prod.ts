@@ -7,10 +7,10 @@ import baseConfig from './module-federation.config';
 const prodConfig: ModuleFederationConfig = {
   ...baseConfig,
   remotes: [
-    [ 'about', 'http://localhost:4201' ],
-    [ 'blog', 'http://localhost:4202' ],
-    [ 'store', 'http://localhost:4203' ],
-    [ 'base', 'http://localhost:4204' ],
+    [ 'about', 'https://main--sunny-gecko-6e64d0.netlify.app/' ],
+    [ 'blog', 'https://stately-heliotrope-10bfb0.netlify.app/' ],
+    [ 'store', 'https://unrivaled-llama-15559c.netlify.app/' ],
+    [ 'base', 'https://scintillating-basbousa-9a4c7e.netlify.app/' ],
   ],
 };
 
